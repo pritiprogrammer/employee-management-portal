@@ -1,0 +1,29 @@
+.employee-create {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.employee-create h1 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.employee-create p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .employee-create {
+    padding: 24px 16px;
+  }
+
+  .employee-create h1 {
+    font-size: 24px;
+  }
+}

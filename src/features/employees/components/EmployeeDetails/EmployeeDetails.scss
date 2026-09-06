@@ -1,0 +1,124 @@
+.employee-details {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+/* Back navigation */
+.back-button {
+  margin-bottom: 20px;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #374151;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+.back-button:focus-visible {
+  outline: 2px solid #111827;
+  outline-offset: 2px;
+}
+
+
+
+/* Employee information card */
+.employee-details-card {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #ffffff;
+}
+.employee-details-success {
+  margin: 0 0 20px;
+  padding: 12px 14px;
+  border: 1px solid #bbf7d0;
+  border-radius: 6px;
+  background: #f0fdf4;
+  color: #166534;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.employee-details-card p {
+  margin: 0;
+  padding: 18px 20px;
+  border-bottom: 1px solid #f3f4f6;
+  color: #374151;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.employee-details-card p:nth-child(odd) {
+  border-right: 1px solid #f3f4f6;
+}
+
+.employee-details-card strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #6b7280;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Status badge */
+.employee-details-card .employee-status {
+  margin-top: 4px;
+}
+.employee-details-card .employee-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 64px;
+  margin-top: 4px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.employee-details-card .employee-status--active {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.employee-details-card .employee-status--inactive {
+  background: #fee2e2;
+  color: #991b1b;
+}
+.employee-details-status {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+/* Responsive */
+@media (max-width: 700px) {
+  .employee-details-card {
+    grid-template-columns: 1fr;
+  }
+
+  .employee-details-card p:nth-child(odd) {
+    border-right: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .employee-details {
+    padding: 24px 16px;
+  }
+
+  .employee-details-header h1 {
+    font-size: 24px;
+  }
+}

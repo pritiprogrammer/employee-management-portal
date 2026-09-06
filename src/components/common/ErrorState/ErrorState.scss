@@ -1,0 +1,39 @@
+.error-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  gap: 6px;
+  text-align: center;
+}
+
+.error-state strong {
+  color: #111827;
+  font-size: 15px;
+}
+
+.error-state span {
+  color: #6b7280;
+  font-size: 14px;
+}
+.error-state button {
+  margin-top: 8px;
+  padding: 8px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.error-state button:hover {
+  background: #f3f4f6;
+}
+
+.error-state button:focus-visible {
+  outline: 2px solid #111827;
+  outline-offset: 2px;
+}
